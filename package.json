@@ -1,4 +1,5 @@
 {
+  "github_history": {
   "author": {
     "name": "Pascal Belloncle",
     "url": "http://jsdox.org"
@@ -8,15 +9,18 @@
       "name": "Marc Trudel",
       "email": "mtrudel@wizcorp.jp",
       "web": "http://www.wizcorp.jp"
-    }
-  ],
+    },
+  "bugs": "https://github.com/sutoiku/jsdox/issues",
+  "preferGlobal": true,
+  "homepage": "http://jsdox.org"
+  ]},
   "license": "MIT",
-  "name": "jsdox",
-  "description": "Simple JSDoc 3 to Markdown generator",
+  "name": "custom-jsdox",
+  "description": "fork of jsdox tool for JSDoc3 documentation to Markdown",
   "version": "0.4.10",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sutoiku/jsdox.git"
+    "url": "https://github.com/rwghuser/custom-jsdox"
   },
   "main": "./jsdox.js",
   "files": [
@@ -31,7 +35,6 @@
     "lint": "node_modules/.bin/jscs jsdox.js lib test && node_modules/.bin/jshint --config .jshintrc jsdox.js lib/* bin/* test/* fixtures/*",
     "test": "npm run lint && node_modules/.bin/mocha;"
   },
-  "preferGlobal": true,
   "bin": {
     "jsdox": "./bin/jsdox"
   },
@@ -52,6 +55,4 @@
   "engines": {
     "node": ">=0.8.4"
   },
-  "homepage": "http://jsdox.org",
-  "bugs": "https://github.com/sutoiku/jsdox/issues"
 }

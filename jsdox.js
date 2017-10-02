@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2012-2016 Sutoiku
+Copyright (c) 2012-2016 Sutoiku, 2017 rwghuser
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
@@ -148,6 +148,18 @@ function generateForDir(filename, destination, templateDir, cb, fileCb) {
       }
 
       var data = analyze(result, argv);
+      const customdescriptionhandling = true;
+      if (customdescriptionhandling) {
+        data.functions.forEach(function(funcdata) {
+          const oldstring = "\r";
+          const newstring = " ";
+          if (funcdata.description != undefined) {
+            while (funcdata.description.indexOf(oldstring) > -1) {
+              funcdata.description = funcdata.description.replace(oldstring, newstring);
+            }
+          }
+        });
+      }
       var output = generateMD(data, templateDir);
 
       if (argv.index) {

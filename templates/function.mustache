@@ -1,27 +1,25 @@
-### {{#moduleName}}{{moduleName}}.{{/moduleName}}{{#className}}{{className}}.{{/className}}{{name}}({{#paramsString}}{{paramsString}}{{/paramsString}}) {{#version}}{{version}}{{/version}}
+### *function* {{#className}}{{className}}.{{/className}}{{name}}({{#paramsString}}{{paramsString}}{{/paramsString}}) {{#version}}{{version}}{{/version}}
+{{#deprecated}}
+Deprecated: {{{deprecated}}}
+{{/deprecated}}
 
 {{#description}}
 {{{description}}}
-
 {{/description}}
-{{#deprecated}}
-Deprecated: {{{deprecated}}}
 
-{{/deprecated}}
 {{#hasParams}}
-**Parameters**
-
+**Parameters:**
 {{/hasParams}}
 {{#params}}
-{{#nested}} - {{/nested}}**{{name}}**: {{#typesString}}`{{typesString}}`{{/typesString}}{{#description}}, {{{description}}}{{/description}}
-
+     {{#nested}} - {{/nested}}**{{name}}**: {{#typesString}}*{{typesString}}*{{/typesString}}{{#description}}, {{{description}}}{{/description}}
 {{/params}}
+
 {{#fires}}
 **Fires**: {{.}}
-
 {{/fires}}
+
 {{#returns}}
-**Returns**: {{#typesString}}`{{typesString}}`{{/typesString}}{{#description}}, {{{description}}}{{/description}}
+**Returns**: {{#typesString}}*{{typesString}}*{{/typesString}}{{#description}}, {{{description}}}{{/description}}
 {{/returns}}
 
 {{#examples}}
@@ -29,5 +27,4 @@ Deprecated: {{{deprecated}}}
 ```js
 {{{examples}}}
 ```
-
 {{/examples}}
