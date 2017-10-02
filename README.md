@@ -1,5 +1,5 @@
-# jsdox [![npm](http://img.shields.io/npm/v/jsdox.svg)](https://npmjs.org/package/jsdox) [![npm](http://img.shields.io/npm/dm/jsdox.svg)](https://npmjs.org/package/jsdox) [![build status](https://travis-ci.org/sutoiku/jsdox.svg?branch=master)](https://travis-ci.org/sutoiku/jsdox)
-
+# custom-jsdox
+a fork of https://github.com/sutoiku/jsdox.  
 jsdox is a simple jsdoc 3 generator.  It pulls documentation tags based on a subset of [jsdoc 3](http://usejsdoc.org/) from your javascript files and generates [markdown](http://daringfireball.net/projects/markdown/) files.
 
 Relies on the [JSDoc3 parser](https://github.com/mrjoelkemp/jsdoc3-parser) to get the full AST including comments.
@@ -44,25 +44,13 @@ Usage: `jsdox [options] <file | directory>`
   to run jsdox on your project
 
 # Author and contributors
-* Pascal Belloncle (psq, Original author)
-* Sam Blowes (blowsie)
-* Todd Henderson (thenderson21)
-* Nic Jansma (nicjansma)
-* Joel Kemp (mrjoelkemp)
-* Ron Korving (ronkorving)
-* Mike MacMillan (mmacmillan)
-* Michael Martin-Smucker (mlms13)
-* Akeem McLennon (bluelaguna)
-* Gabor Sar (gaborsar)
-* Marc Trudel (stelcheck)
-* Anselm Stordeur (anselmstordeur)
-* Vladimir de Turckheim (vdeturckheim)
+see https://github.com/sutoiku/jsdox
 
 # License
 
 jsdox.js is freely distributable under the terms of the MIT license.
 
-Copyright (c) 2012-2016 Sutoiku
+custom-jsdox copyright (c) 2012-2016 Sutoiku, 2017 rwghuser
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation
 files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use,
