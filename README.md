@@ -4,7 +4,7 @@ jsdox is a simple jsdoc 3 generator.  It pulls documentation tags based on a sub
 
 Relies on the [JSDoc3 parser](https://github.com/mrjoelkemp/jsdoc3-parser) to get the full AST including comments.
 
-### CLI Options
+## CLI Options
 
 Usage: `jsdox [options] <file | directory>`
 
@@ -31,7 +31,7 @@ Usage: `jsdox [options] <file | directory>`
 `--respect-recursive` (alias `--rr`): Generate subdirectories and copy the original organization of the sources.
 
 
-# Resources
+### Resources
 * [jsdox](http://jsdox.org) Documentation
 * Github [repo](https://github.com/sutoiku/jsdox)
 * [Changelog](https://github.com/sutoiku/jsdox/blob/master/CHANGES.md)
@@ -39,14 +39,10 @@ Usage: `jsdox [options] <file | directory>`
 * Contribute by [reading the guidelines](https://github.com/sutoiku/jsdox/blob/master/Contributing.md) and creating [pull requests](https://github.com/sutoiku/jsdox/pulls)!
 * Run the test suite using `npm test`
 
-# Related projects
-* [grunt-jsdox](https://github.com/mmacmillan/grunt-jsdox) A grunt task
-  to run jsdox on your project
-
-# Author and contributors
+### Author and contributors
 see https://github.com/sutoiku/jsdox
 
-# License
+## License
 
 jsdox.js is freely distributable under the terms of the MIT license.
 
