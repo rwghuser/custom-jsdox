@@ -1,5 +1,5 @@
 # custom-jsdox
-a fork of https://github.com/sutoiku/jsdox.
+A fork of https://github.com/sutoiku/jsdox.
 
 jsdox is a simple jsdoc 3 generator.  It pulls documentation tags based on a subset of [jsdoc 3](http://usejsdoc.org/) from your javascript files and generates [markdown](http://daringfireball.net/projects/markdown/) files.
 
